@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onTapGesture {
+                BiometricHandler.authenticate(reason: "Reason") { success, code in
+                    print(success, code)
+                }
+            }
     }
 }
 

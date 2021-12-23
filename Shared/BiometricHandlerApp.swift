@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct handler_idApp: App {
+struct BiometricHandlerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
